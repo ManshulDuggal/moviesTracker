@@ -9,11 +9,14 @@ import { getDetail } from "../redux/actions/detailsAction";
 import { favoriteAddAction } from "../redux/actions/favouriteAction";
 
 import { Link } from "react-router-dom";
+
 const MovieCards = ({ name, rating, date, votes, img, id }) => {
   let imageLink = " https://image.tmdb.org/t/p/w342";
 
   const dispatch = useDispatch();
-
+  const preview = () => {
+    console.log("it ran");
+  };
   const detailHandler = () => {
     document.body.style.overflow = "auto";
     dispatch(getDetail(id));
@@ -63,6 +66,14 @@ const MovieCards = ({ name, rating, date, votes, img, id }) => {
             </h4>
           </Card>
         </Link>
+        <motion.button
+          className="preview"
+          variants={CardHover}
+          whileHover="whileHover"
+          onClick={preview}
+        >
+          Preview
+        </motion.button>
       </Wrapper>
     </div>
   );
@@ -87,6 +98,32 @@ const Wrapper = styled(motion.div)`
       background-color: #34c717a4;
 
       cursor: pointer;
+    }
+  }
+
+  .preview {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    color: white;
+    height: 30px;
+    background-color: #00000060;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    &:hover {
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-top-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+      display: block;
+      transition: all 0.2s ease-in-out;
+      background-color: #000000a3;
+
+      cursor: pointer;
+    }
+    button {
     }
   }
 `;

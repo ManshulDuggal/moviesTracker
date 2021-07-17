@@ -1,6 +1,7 @@
 const initState = {
   popularMovies: [],
-  trendingMovies: [],
+
+  preview: [],
 };
 
 export const movieReducer = (state = initState, action) => {
@@ -9,7 +10,7 @@ export const movieReducer = (state = initState, action) => {
       return {
         ...state,
         popularMovies: action.payload.popularMovies,
-        trendingMovies: action.payload.trendingMovies,
+        preview: action.payload.previewMovie,
       };
     default:
       return { ...state };

@@ -18,7 +18,7 @@ const FavoritesCards = ({ name, rating, date, votes, img, id, isLoading }) => {
 
   const RemoveFav = (id) => {
     dispatch(favoriteRemoveAction(id));
-    alert(name + " " + "removed from favourites");
+    alert(name + " removed from favourites");
   };
   const detailHandler = () => {
     document.body.style.overflow = "auto";
