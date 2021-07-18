@@ -7,6 +7,7 @@ import { CardHover } from "../anim/Anim";
 //Rudux
 import { useDispatch } from "react-redux";
 import { getDetail } from "../redux/actions/detailsAction";
+import { VideoModal } from "../components/videoModal";
 import { favoriteRemoveAction } from "../redux/actions/favouriteAction";
 //link
 import { Link } from "react-router-dom";
@@ -70,6 +71,9 @@ const FavoritesCards = ({ name, rating, date, votes, img, id, isLoading }) => {
           <div></div>
         </Link>
       </Wrapper>
+      <div className="preview">
+        <VideoModal />
+      </div>
     </div>
   );
 };
