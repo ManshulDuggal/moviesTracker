@@ -1,25 +1,28 @@
 {
   "files": {
     "main.css": "/moviesTracker/static/css/main.b142da95.chunk.css",
-    "main.js": "/moviesTracker/static/js/main.d4636273.chunk.js",
-    "main.js.map": "/moviesTracker/static/js/main.d4636273.chunk.js.map",
-    "runtime-main.js": "/moviesTracker/static/js/runtime-main.ab6496fa.js",
-    "runtime-main.js.map": "/moviesTracker/static/js/runtime-main.ab6496fa.js.map",
-    "static/js/2.10a62ad0.chunk.js": "/moviesTracker/static/js/2.10a62ad0.chunk.js",
-    "static/js/2.10a62ad0.chunk.js.map": "/moviesTracker/static/js/2.10a62ad0.chunk.js.map",
-    "static/js/3.8b2cb6f3.chunk.js": "/moviesTracker/static/js/3.8b2cb6f3.chunk.js",
-    "static/js/3.8b2cb6f3.chunk.js.map": "/moviesTracker/static/js/3.8b2cb6f3.chunk.js.map",
+    "main.js": "/moviesTracker/static/js/main.68adb3f7.chunk.js",
+    "main.js.map": "/moviesTracker/static/js/main.68adb3f7.chunk.js.map",
+    "runtime-main.js": "/moviesTracker/static/js/runtime-main.7e89b196.js",
+    "runtime-main.js.map": "/moviesTracker/static/js/runtime-main.7e89b196.js.map",
+    "static/css/2.00832c6e.chunk.css": "/moviesTracker/static/css/2.00832c6e.chunk.css",
+    "static/js/2.73acde92.chunk.js": "/moviesTracker/static/js/2.73acde92.chunk.js",
+    "static/js/2.73acde92.chunk.js.map": "/moviesTracker/static/js/2.73acde92.chunk.js.map",
+    "static/js/3.f2fb27aa.chunk.js": "/moviesTracker/static/js/3.f2fb27aa.chunk.js",
+    "static/js/3.f2fb27aa.chunk.js.map": "/moviesTracker/static/js/3.f2fb27aa.chunk.js.map",
     "index.html": "/moviesTracker/index.html",
+    "static/css/2.00832c6e.chunk.css.map": "/moviesTracker/static/css/2.00832c6e.chunk.css.map",
     "static/css/main.b142da95.chunk.css.map": "/moviesTracker/static/css/main.b142da95.chunk.css.map",
-    "static/js/2.10a62ad0.chunk.js.LICENSE.txt": "/moviesTracker/static/js/2.10a62ad0.chunk.js.LICENSE.txt",
+    "static/js/2.73acde92.chunk.js.LICENSE.txt": "/moviesTracker/static/js/2.73acde92.chunk.js.LICENSE.txt",
     "static/media/default.0bceeb80.png": "/moviesTracker/static/media/default.0bceeb80.png",
     "static/media/starEmpty.845bba13.png": "/moviesTracker/static/media/starEmpty.845bba13.png",
     "static/media/starFull.f14d6279.png": "/moviesTracker/static/media/starFull.f14d6279.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab6496fa.js",
-    "static/js/2.10a62ad0.chunk.js",
+    "static/js/runtime-main.7e89b196.js",
+    "static/css/2.00832c6e.chunk.css",
+    "static/js/2.73acde92.chunk.js",
     "static/css/main.b142da95.chunk.css",
-    "static/js/main.d4636273.chunk.js"
+    "static/js/main.68adb3f7.chunk.js"
   ]
 }
