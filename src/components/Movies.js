@@ -14,9 +14,7 @@ const MovieCards = ({ name, rating, date, votes, img, id, MoviePreview }) => {
   let imageLink = " https://image.tmdb.org/t/p/w342";
 
   const dispatch = useDispatch();
-  const preview = () => {
-    <VideoModal />;
-  };
+
   const detailHandler = () => {
     document.body.style.overflow = "auto";
     dispatch(getDetail(id));

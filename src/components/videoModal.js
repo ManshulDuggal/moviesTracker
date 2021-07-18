@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import ModalVideo from "react-modal-video";
 import "../main.scss";
-import ReactHlsPlayer from "react-hls-player";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { CardHover } from "../anim/Anim";
