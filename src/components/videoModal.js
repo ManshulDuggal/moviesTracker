@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import ModalVideo from "react-modal-video";
+
 import "../main.scss";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { CardHover } from "../anim/Anim";
-
+import ReactHLS from "react-hls";
 export const VideoModal = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <React.Fragment>
-      <ModalVideo
-        channel="youtube"
-        autoplay
+      <ReactHLS
+        url="https://content.jwplatform.com/manifests/yp34SRmf.m3u8"
         isOpen={isOpen}
-        videoId="DGQwd1_dpuc"
         onClose={() => setOpen(false)}
       />
 

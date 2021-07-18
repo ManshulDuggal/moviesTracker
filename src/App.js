@@ -21,7 +21,7 @@ function App() {
         <Route exact path={["/movie/:id", "/movie"]}>
           <Home />
         </Route>
-        <Route exact path={["/favorites/:id", "/favorites"]} exact>
+        <Route exact path={["/favorites/:id", "/favorites"]}>
           <Favourites />
         </Route>
       </HashRouter>

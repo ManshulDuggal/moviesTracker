@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
+import Modal from "./modal";
 import { CardHover } from "../anim/Anim";
 //Rudux
 import { useDispatch } from "react-redux";
@@ -74,7 +75,7 @@ const MovieCards = ({ name, rating, date, votes, img, id, MoviePreview }) => {
         </motion.button> */}
       </Wrapper>
       <div className="preview">
-        <VideoModal />
+        <Modal />
         {/* i can pass in the url to this madal component from the state but since its HLS it wont play anyway, Ill find a way though.. */}
       </div>
     </div>
