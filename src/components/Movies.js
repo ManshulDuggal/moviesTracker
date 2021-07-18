@@ -7,15 +7,15 @@ import { CardHover } from "../anim/Anim";
 import { useDispatch } from "react-redux";
 import { getDetail } from "../redux/actions/detailsAction";
 import { favoriteAddAction } from "../redux/actions/favouriteAction";
-
+import { VideoModal } from "../components/videoModal";
 import { Link } from "react-router-dom";
 
-const MovieCards = ({ name, rating, date, votes, img, id }) => {
+const MovieCards = ({ name, rating, date, votes, img, id, MoviePreview }) => {
   let imageLink = " https://image.tmdb.org/t/p/w342";
 
   const dispatch = useDispatch();
   const preview = () => {
-    console.log("it ran");
+    <VideoModal />;
   };
   const detailHandler = () => {
     document.body.style.overflow = "auto";
@@ -66,15 +66,19 @@ const MovieCards = ({ name, rating, date, votes, img, id }) => {
             </h4>
           </Card>
         </Link>
-        <motion.button
+        {/* <motion.button
           className="preview"
           variants={CardHover}
           whileHover="whileHover"
           onClick={preview}
         >
           Preview
-        </motion.button>
+        </motion.button> */}
       </Wrapper>
+      <div className="preview">
+        <VideoModal />
+        {/* i can pass in the url to this madal component from the state but since its HLS it wont play anyway, Ill find a way though.. */}
+      </div>
     </div>
   );
 };
@@ -98,32 +102,6 @@ const Wrapper = styled(motion.div)`
       background-color: #34c717a4;
 
       cursor: pointer;
-    }
-  }
-
-  .preview {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
-    color: white;
-    height: 30px;
-    background-color: #00000060;
-    width: 100%;
-    overflow: hidden;
-    border: none;
-    &:hover {
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-      border-top-left-radius: 0rem;
-      border-top-right-radius: 0rem;
-      display: block;
-      transition: all 0.2s ease-in-out;
-      background-color: #000000a3;
-
-      cursor: pointer;
-    }
-    button {
     }
   }
 `;

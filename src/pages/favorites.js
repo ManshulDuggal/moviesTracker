@@ -20,6 +20,7 @@ const Favourites = () => {
       <Section>
         <h1>Favorites</h1>
         <Cardwrapper>
+          
           {favorites.map((data) => (
             <FavoritesCards
               name={data.name}
